@@ -1,0 +1,24 @@
+name: briq
+label: briq
+kind: backend
+version: 0.1.0
+author: briq
+homepage: https://briq.cloud
+license: MIT
+description: >
+  briq terminal backend for Hermes Agent: the terminal, file and code tools run in
+  a briq sandbox, a microVM of its own with its own disk, instead of on this
+  machine. Select it with `terminal.backend: briq`. The key comes from
+  BRIQ_API_KEY.
+requires_hermes: ">=0.21.6"
+requires_env:
+  - name: BRIQ_API_KEY
+    description: "briq API key (briq.cloud, Settings, API keys)"
+    url: "https://app.briq.cloud"
+    secret: true
+config_keys:
+  - terminal.briq_image
+  - terminal.briq_size
+  - terminal.briq_sleep
+provides_tools: []
+provides_hooks: []

@@ -1,0 +1,23 @@
+[project]
+name = "hermes-briq"
+version = "0.1.0"
+description = "briq terminal backend for Hermes Agent: run the terminal and file tools in a briq sandbox"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "briq" }]
+requires-python = ">=3.11"
+dependencies = ["briq-cloud>=0.1.1,<0.2"]
+
+[project.urls]
+Homepage = "https://briq.cloud"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF", "C4", "PT"]
+ignore = ["PT018", "PT012"]  # a test may assert two facts at once
