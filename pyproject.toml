@@ -1,12 +1,12 @@
 [project]
 name = "hermes-briq"
-version = "0.1.0"
+version = "0.1.1"
 description = "briq terminal backend for Hermes Agent: run the terminal and file tools in a briq sandbox"
 readme = "README.md"
 license = { text = "MIT" }
 authors = [{ name = "briq" }]
 requires-python = ">=3.11"
-dependencies = ["briq-cloud>=0.1.1,<0.2"]
+dependencies = ["briq-cloud>=0.2,<0.3"]
 
 [project.urls]
 Homepage = "https://briq.cloud"
